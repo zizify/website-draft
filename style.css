@@ -7,7 +7,8 @@ a {
 }
 
 .github-pic {
-    width: 5%;
+    margin-top: -3px;
+    width: 40px;
     height: auto;
 }
 
@@ -54,6 +55,7 @@ a {
 }
 
 .section-title {
+    font-size: 60px;
     margin-top: 60px;
     text-align: center;
 }
@@ -71,6 +73,24 @@ a {
     left: 0;
     right: 0; */
     background-color: gray;
+}
+
+.set-off {
+    margin-top: 100px;
+}
+
+.personal-pic-2 {
+    width: 75%;
+    height: auto;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.content-p {
+    font-size: 20px;
+}
+
+.about-me-contents {
+    height: 350px;
 }
 
 @media (min-width: 640px) {
