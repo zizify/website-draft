@@ -1,0 +1,90 @@
+a {
+    font-style: none;
+}
+
+.hide {
+    display: none;
+}
+
+.github-pic {
+    width: 5%;
+    height: auto;
+}
+
+.links-ul {
+    position: absolute;
+    top: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.portrait-wrapper {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.surrounding-circle-div {
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    border: solid 5px gainsboro;
+    border-radius: 50%;
+}
+
+.personal-pic-img {
+    position: relative;
+    top: 5px;    
+    left: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.typewriter {
+    color: gainsboro;
+    text-align: center;
+}
+
+.description-h2 {
+    color: gainsboro;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.section-summary {
+    font-size: 38px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.gray {
+    /* position: absolute;
+    top: 750px;
+    left: 0;
+    right: 0; */
+    background-color: gray;
+}
+
+@media (min-width: 640px) {
+    .links-ul {
+        flex-direction: row;
+    }
+
+    .page-links-li {
+        margin-right: 20px;
+    }
+
+    .external-links {
+        padding-right: 40px;
+        margin-right: 20px;
+        text-align: right;
+    }
+}
