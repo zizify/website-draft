@@ -3,7 +3,8 @@ body {
 }
 
 a {
-    font-style: none;
+    color: #FFBC42 !important;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4 {
@@ -14,23 +15,51 @@ h1, h2, h3, h4 {
     display: none;
 }
 
-.github-pic {
+.section-break {
+    width: 40%;
+    margin-bottom: 100px;
+    border: solid 1px #605F5E;
+}
+
+.page-links-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(19, 35, 65, 0.9);
+    z-index: 10000;
+}
+
+.link-pic {
     margin-top: -3px;
-    width: 40px;
-    height: auto;
+    margin-right: 30px;
+    width: auto;
+}
+
+.github-pic {
+    height: 30px;
+}
+
+.linkedin-pic {
+    height: 25px;
 }
 
 .background-photo {
     width: 100%;
-    height: 750px;
-    overflow: hidden;
+    height: 100%;
+    overflow: hide;
 }
 
 .links-ul {
-    position: absolute;
-    top: 30px;
+    position: relative;
+    top: 10px;
     list-style: none;
     display: flex;
+}
+
+.page-links-li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
 }
 
 .portrait-wrapper {
@@ -61,19 +90,17 @@ h1, h2, h3, h4 {
 }
 
 .header-box {
-    width: 400px;
+    width: 440px;
     height: 140px;
     margin-top: 20px;
     padding: 20px;
-    opacity: 0.6;
-    border-radius: 40px;
-    background-color: rgb(63, 63, 63);
+    border-radius: 80px;
+    background-color: rgba(29, 52, 97, 0.5);
 }
 
 .typewriter {
     position: relative;
     top: -140px;
-    opacity: 1;
     color: gainsboro;
     text-align: center;
 }
@@ -81,7 +108,6 @@ h1, h2, h3, h4 {
 .description-h2 {
     position: relative;
     top: -140px;
-    opacity: 1;
     color: gainsboro;
     text-align: center;
 }
@@ -91,6 +117,7 @@ h1, h2, h3, h4 {
 }
 
 .section-title {
+    color: #2355A7;
     font-size: 60px;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -109,7 +136,7 @@ h1, h2, h3, h4 {
 }
 
 .set-off {
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 50px;
 }
 
@@ -130,6 +157,74 @@ h1, h2, h3, h4 {
 
 .about-me-contents {
     height: 350px;
+}
+
+.circle-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+.reduced-width {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.icon-header {
+    margin-bottom: 10px;
+    color: #2355A7;
+    text-align: center;
+}
+
+.icon-explanation {
+    text-align: center;
+}
+
+.skill-icon {
+    text-align: center;
+}
+
+.big-icon {
+    color: #2355A7;
+    font-size: 72px;
+}
+
+.skill-header {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2355A7;
+    text-align: center;
+}
+
+.skill-set {
+    margin-top: 15px;
+    height: 128px;    
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-item {
+    width: 84px;
+    height: 84px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.skill-label {
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.jquery-icon {
+    height: 84px;
+    width: 73.5px;
 }
 
 @media (min-width: 640px) {
