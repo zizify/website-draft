@@ -1,9 +1,25 @@
 console.log('JavaScript is properly linked up.');
 
 
-$('#html').hover(
+$('#subscribr').hover(
 	function() {
-	    console.log('Hover triggered');
-	    $('#html-label').toggle(200);
+		console.log('should render');
+	    $('#subscribr-click').toggle(200);
 	}
 );
+
+$(window).scroll(
+	{
+		previousTop: 0
+	}, 
+	function () {
+		var currentTop = $(window).scrollTop();
+		if (currentTop < this.previousTop) {
+			$('.sidebar em').text('Up');
+			$('.page-links-nav').show(400);
+		} else {
+			$('.sidebar em').text('Down');
+			$('.page-links-nav').hide(400);
+		}
+		this.previousTop = currentTop;
+	});
