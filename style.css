@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Nunito', sans-serif !important;
+    font-family: 'Asap', sans-serif !important;
 }
 
 .hide {
@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
     top: 0;
     width: 100%;
     height: 40px;
-    background-color: #5C415D;
+    background-color: rgba(10, 34, 57, 0.8);
     z-index: 10000;
 }
 
@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
 }
 
 .page-links-li {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Asap', sans-serif;
     font-size: 16px;
 }
 
@@ -125,7 +125,7 @@ h1, h2, h3, h4 {
 }
 
 .section-summary {
-    font-family: 'Nunito', sans-serif !important;
+    font-family: 'Asap', sans-serif !important;
     font-size: 38px;
     margin-bottom: 60px;
     text-align: center;
@@ -214,9 +214,6 @@ h1, h2, h3, h4 {
     width: 84px;
     height: 84px;
     margin-right: 60px;
-}
-
-.skill-label {
     text-align: center;
 }
 
@@ -231,6 +228,7 @@ h1, h2, h3, h4 {
 
 .project-header {
     font-size: 40px;
+    text-align: center;
 }
 
 .project-link {
@@ -250,21 +248,98 @@ h1, h2, h3, h4 {
     color: black;
 }
 
-.subscribr-screenshot {
+.img-container {
+    display: inline-block;
+    width: 80%;
     margin-top: 20px;
     margin-left: -15px;
+}
+
+.subscribr-screenshot {
     width: 100%;
     height: auto;
     border: 2px solid #2355A7;
 }
 
+.screenshot:hover {
+    border: 2px solid #FB4D3D;
+}
+
 .click-box {
     display: none;
-    margin-left: -15px;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 200px;
     color: white;
+    font-size: 18px;
+    font-variant: small-caps;
+    background: #FB4D3D;
+}
+
+.icons-container {
+    position: absolute;
+    right: 10%;
+    top: 20px;
+}
+
+.project-icon {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.icon-label {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+}
+
+.about-container {
+    margin-left: 20px;
+    height: 372px;
+}
+
+.about-header {
+    font-family: 'Asap', sans-serif;
+    font-size: 24px;
+    color: #2355A7;
+}
+
+.about-para {
+    font-size: 20px;
+}
+
+.about-link {
+    font-family: 'Asap', sans-serif;
+    color: #2355A7;
+}
+
+.about-link:hover {
+    color: #FB4D3D;
+    text-decoration: none;
+}
+
+.collaborator-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.collaborator-header {
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+}
+
+.collaborator-link {
+    color: #2355A7;
     font-size: 16px;
-    background: #2355A7;
+}
+
+.collaborator-link:hover {
+    color: #FB4D3D;
+    text-decoration: none;
 }
 
 @media (min-width: 640px) {
@@ -289,5 +364,10 @@ h1, h2, h3, h4 {
         height: 128px;    
         display: flex;
         justify-content: flex-start;   
+    }
+
+    .project-header {
+        text-align: left;
+        margin-left: 20px;
     }
 }

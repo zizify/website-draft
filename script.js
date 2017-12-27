@@ -4,22 +4,17 @@ console.log('JavaScript is properly linked up.');
 $('#subscribr').hover(
 	function() {
 		console.log('should render');
-	    $('#subscribr-click').toggle(200);
+		$('#subscribr-click').toggle(200);
 	}
 );
 
-$(window).scroll(
-	{
-		previousTop: 0
-	}, 
+$(window).scroll({previous: 0}, 
 	function () {
-		var currentTop = $(window).scrollTop();
-		if (currentTop < this.previousTop) {
-			$('.sidebar em').text('Up');
-			$('.page-links-nav').show(400);
+		let current = $(window).scrollTop();
+		if (current < this.previous) {
+			$('.page-links-nav').css({opacity: 1, transition: '0.5s'}, 400);
 		} else {
-			$('.sidebar em').text('Down');
-			$('.page-links-nav').hide(400);
+			$('.page-links-nav').css({opacity: 0, transition: '0.5s'}, 400);
 		}
-		this.previousTop = currentTop;
+		this.previous = current;
 	});
