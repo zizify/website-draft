@@ -6,6 +6,14 @@ h1, h2, h3, h4 {
     font-family: 'Asap', sans-serif !important;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
 .hide {
     display: none;
 }
@@ -17,12 +25,12 @@ h1, h2, h3, h4 {
 }
 
 .link {
-    color: #EAC435 !important;
+    color: white !important;
     text-decoration: none;
 }
 
 .link:hover {
-    color: #EAC435 !important;
+    color: white !important;
     text-decoration: none !important;
     font-style: italic !important;
 }
@@ -32,8 +40,8 @@ h1, h2, h3, h4 {
     top: 0;
     width: 100%;
     height: 40px;
-    background-color: rgba(10, 34, 57, 0.8);
-    z-index: 10000;
+    background-color: #982649;
+    z-index: 100000;
 }
 
 .link-pic {
@@ -101,7 +109,7 @@ h1, h2, h3, h4 {
     margin-top: 20px;
     padding: 20px;
     border-radius: 80px;
-    background-color: rgba(29, 52, 97, 0.5);
+    background-color: rgba(35, 85, 167, 0.8);
 }
 
 .typewriter {
@@ -180,13 +188,6 @@ h1, h2, h3, h4 {
     width: 300px;
 }
 
-/* .front-end {
-    margin-left: 40px;
-    margin-right: 40px;
-    height: 150px;
-    background-color: #2355A7
-} */
-
 .icon-header {
     margin-bottom: 10px;
     color: #2355A7;
@@ -246,6 +247,7 @@ h1, h2, h3, h4 {
 
 .project-header {
     font-size: 40px;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -264,6 +266,10 @@ h1, h2, h3, h4 {
 
 .github-button {
     color: black;
+}
+
+.github-button:hover {
+    size: 125%;
 }
 
 .img-container {
@@ -317,12 +323,14 @@ h1, h2, h3, h4 {
 
 .about-container {
     margin-left: 20px;
+    margin-bottom: 85px;
     height: 372px;
 }
 
 .about-header {
     font-family: 'Asap', sans-serif;
     font-size: 24px;
+    font-weight: bold;
     color: #2355A7;
 }
 
@@ -342,7 +350,7 @@ h1, h2, h3, h4 {
 
 .collaborator-container {
     position: absolute;
-    bottom: 0;
+    bottom: 85px;
 }
 
 .collaborator-header {
@@ -358,6 +366,79 @@ h1, h2, h3, h4 {
 .collaborator-link:hover {
     color: #FB4D3D;
     text-decoration: none;
+}
+
+.project-break {
+    width: 40%;
+    margin-bottom: 85px;
+    border: solid 0.5px rgba(66, 63, 64, 0.6);
+}
+
+.placeholder-screenshot {
+    height: 350px;
+    width: 432px;
+    border: solid 2px #2355A7;
+}
+
+.placeholder-screenshot:hover {
+    border: 2px solid #FB4D3D;
+}
+
+.blue {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: #2355A7;
+}
+
+.contact-title {
+    color: #EBF2FA;
+    font-size: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #70A9A1;
+    text-align: center;
+}
+
+.contact-circle:hover {
+    background-color: #C84630;
+}
+
+.contacts-container {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.white-icon {
+    margin-top: 40px;
+    color: #EBF2FA;
+}
+
+.contact-label {
+    display: none;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    color: #EBF2FA;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    background-color: #C84630;
+    border-radius: 20px;
 }
 
 @media (min-width: 640px) {
