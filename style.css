@@ -188,11 +188,11 @@ h1, h2, h3, h4 {
 }
 
 .front-end {
-    background-color: #74B3CE;
+    background-color: rgb(141, 216, 205);
 }
 
 .back-end {
-    background-color: #70A9A1;
+    background-color: rgb(124, 192, 223);
 }
 
 .icon-header {
