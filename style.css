@@ -21,6 +21,12 @@ h1, h2, h3, h4 {
     text-decoration: none;
 }
 
+.link:hover {
+    color: #EAC435 !important;
+    text-decoration: none !important;
+    font-style: italic !important;
+}
+
 .page-links-div {
     position: fixed;
     top: 0;
@@ -76,7 +82,7 @@ h1, h2, h3, h4 {
     margin-bottom: 40px;
     width: 220px;
     height: 220px;
-    border: solid 5px gainsboro;
+    border: solid 5px #EBF2FA;
     border-radius: 50%;
 }
 
@@ -101,14 +107,14 @@ h1, h2, h3, h4 {
 .typewriter {
     position: relative;
     top: -140px;
-    color: gainsboro;
+    color: #EBF2FA;
     text-align: center;
 }
 
 .description-h2 {
     position: relative;
     top: -140px;
-    color: gainsboro;
+    color: #EBF2FA;
     text-align: center;
 }
 
@@ -174,6 +180,13 @@ h1, h2, h3, h4 {
     width: 300px;
 }
 
+/* .front-end {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 150px;
+    background-color: #2355A7
+} */
+
 .icon-header {
     margin-bottom: 10px;
     color: #2355A7;
@@ -186,6 +199,11 @@ h1, h2, h3, h4 {
 
 .skill-icon {
     text-align: center;
+}
+
+.skill-label {
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
 }
 
 .big-icon {
