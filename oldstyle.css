@@ -1,0 +1,482 @@
+body {
+    width: 960px;
+    font-family: 'Quattrocento Sans', sans-serif ;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.small-all {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif ;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none ;
+}
+
+a:hover {
+    text-decoration: none ;
+}
+
+.hide {
+    display: none;
+}
+
+.section-break {
+    width: 40%;
+    margin-bottom: 100px;
+    border: solid 1px #605F5E;
+}
+
+.link {
+    color: white ;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white ;
+    text-decoration: none ;
+    font-style: italic ;
+}
+
+.page-links-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(35, 85, 167, 0.8);
+    z-index: 100000;
+}
+
+.link-pic {
+    margin-top: -3px;
+    margin-right: 30px;
+    width: auto;
+}
+
+.github-pic {
+    height: 30px;
+}
+
+.linkedin-pic {
+    height: 25px;
+}
+
+.background-photo {
+    width: 100vw;
+    height: 100vh;
+    background: url(assets/images/swirl_pattern.png) center center fixed;
+    background-color: rgba(35, 85, 167, 0.5);
+}
+
+.links-ul {
+    position: relative;
+    top: -6px;
+    list-style: none;
+    display: flex;
+}
+
+.page-links-li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+.portrait-container {
+    position: relative;
+    top: 40%;
+}
+
+.personal-pic-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px #2355A7;
+    border-radius: 50%;
+}
+
+.header-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 440px;
+    height: 140px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 80px;
+    background-color: rgba(35, 85, 167, 0.8);
+}
+
+.white {
+    color: white;
+}
+
+.centered {
+    text-align: center;
+}
+
+.content-section {
+    height: 900px;
+}
+
+.section-title {
+    color: #2355A7;
+    font-size: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-summary {
+    font-family: 'Oswald', sans-serif ;
+    font-size: 38px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.gray {
+    height: 340px;
+}
+
+.set-off {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.pic-2-container {
+    text-align: center;
+}
+
+.personal-pic-2 {
+    width: 75%;
+    height: auto;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.content-p {
+    font-size: 20px;
+    line-height: 175%;
+}
+
+.about-me-contents {
+    height: 350px;
+}
+
+.circle-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+.reduced-width {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.icon-header {
+    margin-bottom: 10px;
+    color: #2355A7;
+    text-align: center;
+}
+
+.icon-explanation {
+    text-align: center;
+}
+
+.skill-icon {
+    text-align: center;
+}
+
+.skill-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.big-icon {
+    color: #2355A7;
+    font-size: 72px;
+}
+
+.skill-header {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2355A7;
+    text-align: center;
+}
+
+.skill-set {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 128px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+.skill-item {
+    width: 84px;
+    height: 84px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.jquery-icon {
+    height: 84px;
+    width: 73.5px;
+}
+
+.project-header {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-link {
+    color: #2355A7;
+}
+
+.project-link:hover {
+    color: #FB4D3D;
+    text-decoration: none;
+}
+
+.shift-right {
+    margin-left: 20px;
+}
+
+.github-button {
+    color: black;
+}
+
+.github-button:hover {
+    size: 125%;
+}
+
+.img-container {
+    display: inline-block;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+.subscribr-screenshot {
+    width: 100%;
+    height: auto;
+    border: 2px solid #2355A7;
+}
+
+.screenshot:hover {
+    border: 2px solid #FB4D3D;
+}
+
+.click-box {
+    display: none;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    color: white;
+    font-size: 18px;
+    font-variant: small-caps;
+    background: #FB4D3D;
+}
+
+.icons-container {
+    position: absolute;
+    right: 10%;
+    top: 20px;
+}
+
+.project-icon {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.icon-label {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.about-container {
+    margin-left: 20px;
+    margin-bottom: 85px;
+    height: 372px;
+}
+
+.about-header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2355A7;
+}
+
+.about-para {
+    font-size: 20px;
+}
+
+.about-link {
+    font-family: 'Oswald', sans-serif;
+    color: #2355A7;
+}
+
+.about-link:hover {
+    color: #FB4D3D;
+    text-decoration: none;
+}
+
+.collaborator-container {
+    position: absolute;
+    bottom: 85px;
+}
+
+.collaborator-header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.collaborator-link {
+    color: #2355A7;
+    font-size: 16px;
+}
+
+.collaborator-link:hover {
+    color: #FB4D3D;
+    text-decoration: none;
+}
+
+.project-break {
+    width: 40%;
+    margin-bottom: 85px;
+    border: solid 0.5px rgba(66, 63, 64, 0.6);
+}
+
+.placeholder-screenshot {
+    height: 350px;
+    width: 432px;
+    border: solid 2px #2355A7;
+}
+
+.placeholder-screenshot:hover {
+    border: 2px solid #FB4D3D;
+}
+
+.blue {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: #2355A7;
+}
+
+.contact-title {
+    color: #EBF2FA;
+    font-size: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #70A9A1;
+    text-align: center;
+}
+
+.contact-circle:hover {
+    background-color: #C84630;
+}
+
+.contacts-container {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.white-icon {
+    margin-top: 40px;
+    color: #EBF2FA;
+}
+
+.contact-label {
+    display: none;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    color: #EBF2FA;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-color: #C84630;
+    border-radius: 20px;
+}
+
+@media (min-width: 640px) {
+    .big-third {
+        width: 33.3%;
+    }
+
+    .big-two-thirds {
+        width: 66.7%;
+    }
+
+    .big-half {
+        width: 50%;
+    }
+
+    .portrait-container {
+        top: 20%;
+    }
+
+    .links-ul {
+        flex-direction: row;
+    }
+
+    .page-links-li {
+        margin-right: 20px;
+    }
+
+    .external-links {
+        padding-right: 40px;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    .skill-set {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        height: 128px;    
+        display: flex;
+        justify-content: flex-start;   
+    }
+
+    .project-header {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
