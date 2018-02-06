@@ -5,14 +5,13 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, .font1 {
+h1, h2, h3, h4, a {
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
 section {
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
 }
 
 .white-txt {
@@ -28,7 +27,7 @@ section {
 }
 
 .color3 {
-    background-color: #FEFAEC;
+    background-color: #face7c;
 }
 
 .color4 {
@@ -44,7 +43,7 @@ section {
 }
 
 .color3-txt {
-    color: #FEFAEC;
+    color: #face7c;
 }
 
 .color4-txt {
@@ -53,16 +52,20 @@ section {
 
 .flex {
     display: flex;
+    justify-content: space-between;
+}
+
+.centered {
+    text-align: center;
 }
 
 /* ELEMENT STYLINGS */
 
 .header-background {
-    background-color: #FEFAEC;
-    background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+    margin-left: -10px;
+    background-image: url("assets/images/hypnotize.png");
     width: 99vw;
     height: 100vh;
-    overflow-y: hidden;
 }
 
 .links-bar {
@@ -70,7 +73,6 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 7%;
 }
 
 .links-list {
@@ -79,6 +81,16 @@ section {
 
 .link-item {
     float: left;
+}
+
+.link-box:hover {
+    color: #face7c;
+    padding-bottom: 3px;
+    border-bottom: solid #face7c 1px;
+}
+
+.link-box:hover > a {
+    color: #face7c;
 }
 
 .link {
@@ -109,36 +121,53 @@ section {
 }
 
 .space {
-    margin-top: 8rem;
     text-align: center;
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-top: 8rem;
+}
+
+.set-off {
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 
 .section-summary {
     font-family: 'Quattrocento Sans', sans-serif ;
-    font-size: 2rem;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     text-align: center;
 }
 
 .content-p {
+    margin-top: 0px;
     font-size: 20px;
     line-height: 175%;
 }
 
+.pic-2 {
+    text-align: center;
+}
+
 /* MOBILE */
-@media (max-width: 639px) {
+@media (max-width: 420px) {
     .hamburger {
         display: inline-block;
         margin-left: 10px;
         font-size: 30px;
     }
 
+    section {
+        width: 80%;
+    }
+
     .links-list {
         display: none;
+    }
+
+    .links-bar {
+        height: 7%;
     }
 
     .link-item {
@@ -165,15 +194,30 @@ section {
         font-size: 1rem;
     }
 
-    .half {
-        width: 100%;
+    .section-summary {
+        font-size: 1.5rem;
     }
 
+    .container {
+        flex-direction: column;
+    }
+
+    .half {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .pic-2 {
+        width: 85%;
+        height: auto;
+    }
 }
 
-/* DESKTOP */
+@media (min-width: 421px) and (max-width: 770px) {
+    section {
+        width: 80%;
+    }
 
-@media (min-width: 640px) {
     .hamburger {
         display: none;
     }
@@ -184,6 +228,68 @@ section {
     }
 
     .link-item {
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+
+    .picture-container {
+        padding-top: 40%;
+    }
+
+    .author-pic {
+        width: 200px;
+    }
+
+    .name-box {
+        width: 40%;
+    }
+
+    .name-header {
+        font-size: 1.5rem;
+    }
+
+    .name-subtitle {
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .section-summary {
+        font-size: 2rem;
+    }
+
+    .half {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .pic-2 {
+        width: 85%;
+        height: auto;
+    }
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 771px) {
+    section {
+        width: 960px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .links-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .link-item {
+        font-size: 1.5rem;
         margin-right: 20px;
     }
 
@@ -203,12 +309,29 @@ section {
         font-size: 2.5rem;
     }
 
+    .section-summary {
+        font-size: 2rem;
+    }
+
     .half {
         width: 50%;
+    }
+
+    .pic-2 {
+        width: 85%;
+        height: auto;
     }
 }
 
 @media (min-width: 1025px) {
+    .links-bar {
+        height: 7%;
+    }
+
+    .link-item {
+        font-size: 1rem;
+    }
+
     .links-list {
         display: block;
         margin-top: 15px;

@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Andy Gaines</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Roboto" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script> 
     <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>    
   </head>
@@ -14,11 +14,11 @@
         <nav class="links-bar color1" role="navigation">
           <div class="hamburger white-txt">☰</div>
           <ul class="links-list font1">
-            <li class="link-item"><a class="link white-txt" href="#about">About</a></li>
-            <li class="link-item"><a class="link white-txt" href="#philosophy">Philosophy</a></li>
-            <li class="link-item"><a class="link white-txt" href="#skills">Skills</a></li>
-            <li class="link-item"><a class="link white-txt" href="#projects">Projects</a></li>
-            <li class="link-item"><a class="link white-txt" href="#resume">Résumé</a></li>
+            <li class="link-item"><div class="link-box"><a class="link white-txt" href="#about">About</a></div></li>
+            <li class="link-item"><div class="link-box"><a class="link white-txt" href="#philosophy">Philosophy</a></div></li>
+            <li class="link-item"><div class="link-box"><a class="link white-txt" href="#skills">Skills</a></div></li>
+            <li class="link-item"><div class="link-box"><a class="link white-txt" href="#projects">Projects</a></div></li>
+            <li class="link-item"><div class="link-box"><a class="link white-txt" href="#resume">Résumé</a></div></li>
           </ul>
         </nav>
         <div class="picture-container">
@@ -30,7 +30,8 @@
         </div>
       </div>
     </header>
-    <section class="about-me-section content-section" id="about">
+    <div id="about"></div>
+    <section class="about-me-section content-section">
         <div class="space">
           <h2 class="section-title color1-txt"><i class="fa fa-user-circle" aria-hidden="true"></i>  About Me</h2>
           <p class="section-summary">
@@ -40,8 +41,8 @@
         </div>
         <div class="flex container">
           <div class="half">
-            <div class="about-me-contents">
-              <img src="assets/images/personal-pic-2.jpg" class="personal-pic-2" alt="Picture of epigraphic hieroglyphics.">
+            <div class="about-me-contents centered">
+              <img src="assets/images/personal-pic-2.jpg" class="pic-2" alt="Picture of epigraphic hieroglyphics.">
             </div>
           </div>
           <div class="half">
