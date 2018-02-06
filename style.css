@@ -12,6 +12,7 @@ h1, h2, h3, h4, a {
 section {
     margin-left: auto;
     margin-right: auto;
+    max-width: 80%;
 }
 
 .white-txt {
@@ -116,16 +117,11 @@ section {
     padding: 5px 50px;
 }
 
-.content-section {
-    height: 900px;
-}
-
 .space {
     text-align: center;
 }
 
 .section-title {
-    font-size: 4rem;
     margin-top: 8rem;
 }
 
@@ -142,7 +138,6 @@ section {
 
 .content-p {
     margin-top: 0px;
-    font-size: 20px;
     line-height: 175%;
 }
 
@@ -150,8 +145,36 @@ section {
     text-align: center;
 }
 
+.section-break {
+    width: 40%;
+    margin-top: 4rem;
+    border: solid 1px #625772;
+}
+
+.circle-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: solid 1px black;
+    border-radius: 50%;
+}
+
+.icon-header {
+    font-size: 2rem;
+}
+
+.icon-explanation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
 /* MOBILE */
 @media (max-width: 420px) {
+    body {
+        max-width: 90vw;
+    }
+
     .hamburger {
         display: inline-block;
         margin-left: 10px;
@@ -159,7 +182,7 @@ section {
     }
 
     section {
-        width: 80%;
+        width: 70%;
     }
 
     .links-list {
@@ -194,6 +217,10 @@ section {
         font-size: 1rem;
     }
 
+    .section-title {
+        font-size: 3rem;
+    }
+
     .section-summary {
         font-size: 1.5rem;
     }
@@ -207,9 +234,19 @@ section {
         margin-bottom: 3rem;
     }
 
+    .third {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
     .pic-2 {
         width: 85%;
         height: auto;
+    }
+
+    .circle-icon {
+        width: 8rem;
+        height: 8rem;
     }
 }
 
@@ -260,7 +297,16 @@ section {
         font-size: 2rem;
     }
 
+    .section-title {
+        font-size: 3rem;
+    }
+
     .half {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .third {
         width: 100%;
         margin-bottom: 3rem;
     }
@@ -270,13 +316,18 @@ section {
         height: auto;
     }
 
+    .circle-icon {
+        width: 8rem;
+        height: 8rem;
+    }
 }
 
 /* DESKTOP */
 
 @media (min-width: 771px) {
     section {
-        width: 960px;
+        width: 80%;
+        padding-bottom: 6rem;
     }
 
     .hamburger {
@@ -313,13 +364,26 @@ section {
         font-size: 2rem;
     }
 
+    .section-title {
+        font-size: 4rem;
+    }
+
     .half {
         width: 50%;
+    }
+
+    .third {
+        width: 100%;
     }
 
     .pic-2 {
         width: 85%;
         height: auto;
+    }
+
+    .circle-icon {
+        width: 12rem;
+        height: 12rem;
     }
 }
 
@@ -344,5 +408,13 @@ section {
 
     .author-pic {
         width: 20%;
+    }
+
+    .third {
+        width: 33.3%;
+    }
+
+    .content-p {
+        font-size: 1.5rem;
     }
 }
