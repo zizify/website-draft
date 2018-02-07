@@ -60,6 +60,11 @@ section {
     text-align: center;
 }
 
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
 /* ELEMENT STYLINGS */
 
 .header-background {
@@ -169,6 +174,22 @@ section {
     width: 85%;
 }
 
+.big-icon {
+    margin-top: 1rem;
+    font-size: 6rem;
+}
+
+.skill-set {
+    margin-top: 1.8rem;
+}
+
+.skill-header {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
 /* MOBILE */
 @media (max-width: 420px) {
     body {
@@ -218,7 +239,7 @@ section {
     }
 
     .section-title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .section-summary {
@@ -373,7 +394,7 @@ section {
     }
 
     .third {
-        width: 100%;
+        width: 33.3%;
     }
 
     .pic-2 {
@@ -384,6 +405,55 @@ section {
     .circle-icon {
         width: 12rem;
         height: 12rem;
+    }
+
+    .side {
+        padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+        text-align: center;
+        width: 100%;
+        border-radius: 80px;
+    }
+
+    .skill-item {
+        margin-right: 2rem;
+    }
+
+    .skill-icon {
+        margin-top: 1.5rem;
+    }
+
+    .fourth {
+        width: 33%;
+    }
+
+    .three-fourths {
+        width: 67%;
+    }
+
+    .flex-vertical, .skill-set {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .centered-block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skill-item {
+        width: 84px;
+        height: 84px;
+        margin-right: 1.5rem;
+        text-align: center;
+    }
+
+    .jquery-icon, .postgresql-icon, .mongo-icon {
+        margin-top: 8px;
+    }
+
+    .react-icon {
+        width: 84px;
+        height: 84px;
     }
 }
 
@@ -410,11 +480,19 @@ section {
         width: 20%;
     }
 
-    .third {
-        width: 33.3%;
-    }
-
     .content-p {
         font-size: 1.5rem;
+    }
+
+    .fourth {
+        width: 25%;
+    }
+
+    .three-fourths {
+        width: 75%;
+    }
+
+    .skill-item {
+        margin-right: 4.5rem;
     }
 }
