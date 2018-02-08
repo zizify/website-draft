@@ -679,6 +679,14 @@ section {
         border: solid #625772 0.5px;
         margin: 6rem 0;
     }
+
+    .in-progress {
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-weight: 700;
+        color: #2A9D8F;
+        margin-top: -32px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 1025px) {
