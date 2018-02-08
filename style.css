@@ -66,6 +66,10 @@ section {
     flex-direction: row;
 }
 
+.left {
+    text-align: left;
+}
+
 /* ELEMENT STYLINGS */
 
 .header-background {
@@ -249,6 +253,27 @@ section {
 
 .copyright {
     font-size: 0.8rem;
+}
+
+.project-header {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.img-container img {
+    border: solid 2px #625772;
+}
+
+.click-box {
+    width: 100%;
+    padding: 0.5rem 0.15rem;
+    margin-top: -0.4rem;
+    display: none;
+    text-align: left;
 }
 
 /* MOBILE */
@@ -594,6 +619,42 @@ section {
     .copyright {
         margin-top: 6rem;
     }
+
+    .img-container img {
+        width: 100%;
+    }
+
+    .flex-regular {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icons-container {
+        margin-right: 8%;
+    }
+
+    .about-container {
+        margin-left: 8%;
+    }
+
+    .about-header {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .about-link {
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+
+    .collaborator-header {
+        margin-bottom: 0;
+    }
+
+    .collaborator-link {
+        text-decoration: none;
+    }
+
 }
 
 @media (min-width: 1025px) {
@@ -656,5 +717,10 @@ section {
         font-size: 1.5rem;
         background-color: #2A9D8F;
         border-radius: 1.5rem;
+    }
+
+    .about-para {
+        font-size: 1.2rem;
+        line-height: 125%;
     }
 }
