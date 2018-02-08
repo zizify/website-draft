@@ -66,6 +66,14 @@ section {
     flex-direction: row;
 }
 
+.left {
+    text-align: left;
+}
+
+.italic {
+    font-style: italic;
+}
+
 /* ELEMENT STYLINGS */
 
 .header-background {
@@ -251,6 +259,59 @@ section {
     font-size: 0.8rem;
 }
 
+.project-header {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.flex-regular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-container {
+    margin-right: 8%;
+}
+
+.img-container img {
+    border: solid 2px #625772;
+}
+
+.click-box {
+    width: 100%;
+    padding: 0.5rem 0.15rem;
+    margin-top: -0.4rem;
+    margin-bottom: -1.4rem;
+    display: none;
+    text-align: left;
+}
+
+.about-header {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.about-link {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.about-small-header {
+    margin-bottom: 0;
+}
+
+.collaborator-link {
+    text-decoration: none;
+}
+
 /* MOBILE */
 @media (max-width: 420px) {
     body {
@@ -355,8 +416,20 @@ section {
         margin-right: auto;
     }
 
+    .project-header, .about-header, .tech-stack-container, .collaborator-container {
+        text-align: center;
+    }
+
     .contact-label {
         display: none;
+    }
+
+    .about-header {
+        margin-bottom: 0;
+    }
+
+    .row-wrap {
+        flex-flow: wrap row;
     }
 }
 
@@ -594,6 +667,47 @@ section {
     .copyright {
         margin-top: 6rem;
     }
+
+    .about-container {
+        margin-left: 8%;
+    }
+
+    .about-header {
+        margin-bottom: 0;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .project-break {
+        color: #625772;
+        border: solid #625772 0.5px;
+        margin: 6rem 0;
+    }
+
+    .in-progress {
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-weight: 700;
+        color: #2A9D8F;
+        margin-top: -32px;
+        margin-bottom: 20px;
+    }
+
+    .project-icon {
+        margin: 0 auto;
+    }
+
+    .chalktalk-screenshot {
+        height: 95%;
+        width: 80%;
+    }
+
+    .kurikaeshi-screenshot {
+        padding-top: -10px;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -656,5 +770,10 @@ section {
         font-size: 1.5rem;
         background-color: #2A9D8F;
         border-radius: 1.5rem;
+    }
+
+    .about-para {
+        font-size: 1.2rem;
+        line-height: 125%;
     }
 }

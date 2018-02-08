@@ -3,8 +3,19 @@ console.log('JavaScript is properly linked up.');
 
 $('#subscribr').hover(
 	function() {
-		console.log('should render');
 		$('#subscribr-click').toggle(200);
+	}
+);
+
+$('#chalktalk').hover(
+	function() {
+		$('#chalktalk-click').toggle(200);
+	}
+);
+
+$('#kurikaeshi').hover(
+	function() {
+		$('#kurikaeshi-click').toggle(200);
 	}
 );
 
