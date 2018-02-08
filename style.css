@@ -70,6 +70,10 @@ section {
     text-align: left;
 }
 
+.italic {
+    font-style: italic;
+}
+
 /* ELEMENT STYLINGS */
 
 .header-background {
@@ -668,6 +672,10 @@ section {
         margin-left: 8%;
     }
 
+    .about-header {
+        margin-bottom: 0;
+    }
+
     .project-container {
         display: flex;
         flex-direction: row;
@@ -686,6 +694,19 @@ section {
         color: #2A9D8F;
         margin-top: -32px;
         margin-bottom: 20px;
+    }
+
+    .project-icon {
+        margin: 0 auto;
+    }
+
+    .chalktalk-screenshot {
+        height: 95%;
+        width: 80%;
+    }
+
+    .kurikaeshi-screenshot {
+        padding-top: -10px;
     }
 }
 
