@@ -285,6 +285,7 @@ section {
     width: 100%;
     padding: 0.5rem 0.15rem;
     margin-top: -0.4rem;
+    margin-bottom: -1.4rem;
     display: none;
     text-align: left;
 }
@@ -665,6 +666,18 @@ section {
 
     .about-container {
         margin-left: 8%;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .project-break {
+        color: #625772;
+        border: solid #625772 0.5px;
+        margin: 6rem 0;
     }
 }
 
