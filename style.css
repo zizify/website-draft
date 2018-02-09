@@ -79,29 +79,16 @@ section {
 .header-background {
     margin-left: -10px;
     background-image: url("assets/images/hypnotize.png");
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
 }
 
 .links-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background-color: #625772;
 }
 
 .links-list {
     list-style: none;
-}
-
-.link-box:hover {
-    color: #face7c;
-    padding-bottom: 3px;
-    border-bottom: solid #face7c 1px;
-}
-
-.link-box:hover > a {
-    color: #face7c;
 }
 
 .link {
@@ -311,7 +298,17 @@ section {
 /* MOBILE */
 @media (max-width: 420px) {
     body {
+        margin-left: auto;
+        margin-right: auto;
         max-width: 90vw;
+    }
+
+    .header-background {
+        margin-top: 20px;
+        margin-left: -20px;
+        margin-right: -10px;
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
 
     .hamburger {
@@ -324,6 +321,11 @@ section {
         width: 70%;
     }
 
+    .links-bar {
+        margin-top: -1.3rem;
+        margin-right: -2rem;
+    }
+
     .links-list {
         display: none;
         margin-top: 2.8%;
@@ -332,7 +334,6 @@ section {
 
     .responsive-menu {
         display: block;
-        background-color: #867b96;
     }
 
     .links-bar {
@@ -342,7 +343,16 @@ section {
     .link-item {
         font-size: 1.5rem;
         padding: 5%;
+        background-color: #867b96;
         border-top: solid 2px #625772;
+    }
+
+    .link-item:active {
+        background-color: #face7c
+    }
+
+    .link-item:active a {
+        color: #625772;
     }
 
     .picture-container {
@@ -443,6 +453,13 @@ section {
         width: 80%;
     }
 
+    .links-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
     .hamburger {
         display: none;
     }
@@ -450,12 +467,12 @@ section {
     .links-list {
         display: flex;
         justify-content: space-around;
+        padding-left: 0;
     }
 
     .link-item {
         float: left;
         font-size: 1.5rem;
-        margin-right: 20px;
     }
 
     .picture-container {
@@ -540,6 +557,16 @@ section {
 
     .big-tiny-only {
         display: none;
+    }
+
+    .link-box:hover {
+        color: #face7c;
+        padding-bottom: 3px;
+        border-bottom: solid #face7c 1px;
+    }
+    
+    .link-box:hover > a {
+        color: #face7c;
     }
 }
 
@@ -723,6 +750,24 @@ section {
 
     .big-tiny-only {
         display: none;
+    }
+
+    .link-box:hover {
+        color: #face7c;
+        padding-bottom: 3px;
+        border-bottom: solid #face7c 1px;
+    }
+    
+    .link-box:hover > a {
+        color: #face7c;
+    }
+
+    .links-bar {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
