@@ -79,33 +79,16 @@ section {
 .header-background {
     margin-left: -10px;
     background-image: url("assets/images/hypnotize.png");
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
 }
 
 .links-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background-color: #625772;
 }
 
 .links-list {
     list-style: none;
-}
-
-.link-item {
-    float: left;
-}
-
-.link-box:hover {
-    color: #face7c;
-    padding-bottom: 3px;
-    border-bottom: solid #face7c 1px;
-}
-
-.link-box:hover > a {
-    color: #face7c;
 }
 
 .link {
@@ -129,6 +112,10 @@ section {
     border-radius: 80px;
     margin-top: 50px;
     padding: 5px 50px;
+}
+
+.pic-2 {
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .space {
@@ -315,12 +302,23 @@ section {
 /* MOBILE */
 @media (max-width: 420px) {
     body {
+        margin-left: auto;
+        margin-right: auto;
         max-width: 90vw;
+        overflow-x: hidden;
+    }
+
+    .header-background {
+        margin-top: 20px;
+        margin-left: -20px;
+        margin-right: -10px;
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
 
     .hamburger {
         display: inline-block;
-        margin-left: 10px;
+        padding-left: 5%;
         font-size: 30px;
     }
 
@@ -328,8 +326,21 @@ section {
         width: 70%;
     }
 
+    .links-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     .links-list {
         display: none;
+        margin-top: 2.8%;
+        padding: 0;
+    }
+
+    .responsive-menu {
+        display: block;
     }
 
     .links-bar {
@@ -337,7 +348,18 @@ section {
     }
 
     .link-item {
-        margin-right: 5%;
+        font-size: 1.5rem;
+        padding: 5%;
+        background-color: #867b96;
+        border-top: solid 2px #625772;
+    }
+
+    .link-item:active {
+        background-color: #face7c
+    }
+
+    .link-item:active a {
+        color: #625772;
     }
 
     .picture-container {
@@ -438,6 +460,13 @@ section {
         width: 80%;
     }
 
+    .links-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
     .hamburger {
         display: none;
     }
@@ -445,11 +474,12 @@ section {
     .links-list {
         display: flex;
         justify-content: space-around;
+        padding-left: 0;
     }
 
     .link-item {
+        float: left;
         font-size: 1.5rem;
-        margin-right: 20px;
     }
 
     .picture-container {
@@ -531,6 +561,20 @@ section {
     .copyright {
         margin-top: 6rem;
     }
+
+    .big-tiny-only {
+        display: none;
+    }
+
+    .link-box:hover {
+        color: #face7c;
+        padding-bottom: 3px;
+        border-bottom: solid #face7c 1px;
+    }
+    
+    .link-box:hover > a {
+        color: #face7c;
+    }
 }
 
 /* DESKTOP */
@@ -551,6 +595,7 @@ section {
     }
 
     .link-item {
+        float: left;
         font-size: 1.5rem;
         margin-right: 20px;
     }
@@ -651,6 +696,7 @@ section {
     }
 
     .full-viewport {
+        width: 100vw;
         margin-left: -20px;
         padding-right: 20px;
         padding-bottom: 50px;
@@ -707,6 +753,28 @@ section {
 
     .kurikaeshi-screenshot {
         padding-top: -10px;
+    }
+
+    .big-tiny-only {
+        display: none;
+    }
+
+    .link-box:hover {
+        color: #face7c;
+        padding-bottom: 3px;
+        border-bottom: solid #face7c 1px;
+    }
+    
+    .link-box:hover > a {
+        color: #face7c;
+    }
+
+    .links-bar {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -775,5 +843,9 @@ section {
     .about-para {
         font-size: 1.2rem;
         line-height: 125%;
+    }
+
+    .big-tiny-only {
+        display: inline-block;
     }
 }
