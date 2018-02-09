@@ -1,5 +1,17 @@
 console.log('JavaScript is properly linked up.');
 
+$('#hamburger').click(
+	function() {
+		console.log('hamburger firing')
+		$('#menu').toggle(200);
+	}
+)
+
+$('.link-item').click(
+	function() {
+		$('#menu').toggle(200);
+	}
+)
 
 $('#subscribr').hover(
 	function() {

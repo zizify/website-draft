@@ -94,10 +94,6 @@ section {
     list-style: none;
 }
 
-.link-item {
-    float: left;
-}
-
 .link-box:hover {
     color: #face7c;
     padding-bottom: 3px;
@@ -320,7 +316,7 @@ section {
 
     .hamburger {
         display: inline-block;
-        margin-left: 10px;
+        padding-left: 5%;
         font-size: 30px;
     }
 
@@ -330,6 +326,13 @@ section {
 
     .links-list {
         display: none;
+        margin-top: 2.8%;
+        padding: 0;
+    }
+
+    .responsive-menu {
+        display: block;
+        background-color: #867b96;
     }
 
     .links-bar {
@@ -337,7 +340,9 @@ section {
     }
 
     .link-item {
-        margin-right: 5%;
+        font-size: 1.5rem;
+        padding: 5%;
+        border-top: solid 2px #625772;
     }
 
     .picture-container {
@@ -448,6 +453,7 @@ section {
     }
 
     .link-item {
+        float: left;
         font-size: 1.5rem;
         margin-right: 20px;
     }
@@ -531,6 +537,10 @@ section {
     .copyright {
         margin-top: 6rem;
     }
+
+    .big-tiny-only {
+        display: none;
+    }
 }
 
 /* DESKTOP */
@@ -551,6 +561,7 @@ section {
     }
 
     .link-item {
+        float: left;
         font-size: 1.5rem;
         margin-right: 20px;
     }
@@ -651,6 +662,7 @@ section {
     }
 
     .full-viewport {
+        width: 100vw;
         margin-left: -20px;
         padding-right: 20px;
         padding-bottom: 50px;
@@ -707,6 +719,10 @@ section {
 
     .kurikaeshi-screenshot {
         padding-top: -10px;
+    }
+
+    .big-tiny-only {
+        display: none;
     }
 }
 
@@ -775,5 +791,9 @@ section {
     .about-para {
         font-size: 1.2rem;
         line-height: 125%;
+    }
+
+    .big-tiny-only {
+        display: inline-block;
     }
 }
