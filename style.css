@@ -85,6 +85,7 @@ section {
 
 .links-bar {
     background-color: #625772;
+    z-index: 1000;
 }
 
 .links-list {
@@ -153,12 +154,20 @@ section {
     border: solid 1px #625772;
 }
 
-.circle-icon {
+.circle-icon2 {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-    border: solid 1px black;
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+}
+
+.phil-icon {
+    position: relative;
+    top: 25%;
 }
 
 .icon-header {
@@ -166,6 +175,7 @@ section {
 }
 
 .icon-explanation {
+    line-height: 150%;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
@@ -425,11 +435,6 @@ section {
     .contacts-container {
         width: 50%;
         padding-bottom: 2rem;
-    }
-
-    .full-viewport {
-        margin-left: -10px;
-        padding-right: 12px;
     }
 
     .width {
