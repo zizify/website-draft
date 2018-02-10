@@ -1,17 +1,28 @@
 console.log('JavaScript is properly linked up.');
 
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+	document.querySelectorAll('*'),
+	function(el) {
+		if (el.offsetWidth > docWidth) {
+			console.log(el);
+		}
+	}
+);
+
 $('#hamburger').click(
 	function() {
-		console.log('hamburger firing')
+		console.log('hamburger firing');
 		$('#menu').toggle(200);
 	}
-)
+);
 
 $('.link-item').click(
 	function() {
 		$('#menu').toggle(200);
 	}
-)
+);
 
 $('#subscribr').hover(
 	function() {
