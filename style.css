@@ -61,6 +61,10 @@ section {
     text-align: center;
 }
 
+.justify {
+    text-align: justify;
+}
+
 .flex-horizontal {
     display: flex;
     flex-direction: row;
