@@ -6,7 +6,10 @@ $('#hamburger').click(
 
 $('.link-item').click(
 	function() {
-		if ($(window.width()) < 700) {
+		let width = $(window).width();
+		
+		if (width < 700) {
+			console.log('yes');
 			$('#menu').toggle(200);
 		}
 	}
