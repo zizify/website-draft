@@ -145,7 +145,7 @@ section {
 
 .content-p {
     margin-top: 0px;
-    line-height: 175%;
+    line-height: 125%;
 }
 
 .pic-2 {
@@ -655,6 +655,11 @@ section {
         height: auto;
     }
 
+    .about-me-contents {
+        margin: 0 20px;
+        max-height: 450px;
+    }
+
     .circle-icon {
         width: 12rem;
         height: 12rem;
@@ -764,15 +769,6 @@ section {
         margin: 0 auto;
     }
 
-    .chalktalk-screenshot {
-        height: 95%;
-        width: 80%;
-    }
-
-    .kurikaeshi-screenshot {
-        padding-top: -10px;
-    }
-
     .big-tiny-only {
         display: none;
     }
@@ -877,5 +873,10 @@ section {
 
     .desktop-only {
         display: block;
+    }
+
+    .pic-2 {
+        width: 450px;
+        height: 450px;
     }
 }
