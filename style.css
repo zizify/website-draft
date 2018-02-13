@@ -378,6 +378,7 @@ section {
 
     .author-pic {
         width: 200px;
+        height: auto;
     }
 
     .name-box {
@@ -457,6 +458,10 @@ section {
 
     .row-wrap {
         flex-flow: wrap row;
+    }
+    
+    .desktop-only {
+        display: none;
     }
 }
 
@@ -580,6 +585,10 @@ section {
     .link-box:hover > a {
         color: #face7c;
     }
+
+    .desktop-only {
+        display: none;
+    }
 }
 
 /* DESKTOP */
@@ -667,7 +676,7 @@ section {
     }
 
     .three-fourths {
-        width: 67%;
+        width: 100%;
     }
 
     .flex-vertical, .skill-set {
@@ -781,6 +790,10 @@ section {
         left: 0;
         width: 100%;
     }
+
+    .desktop-only {
+        display: none;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -852,5 +865,13 @@ section {
 
     .big-tiny-only {
         display: inline-block;
+    }
+
+    .smaller-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block;
     }
 }

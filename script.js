@@ -1,19 +1,5 @@
-console.log('JavaScript is properly linked up.');
-
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-	document.querySelectorAll('*'),
-	function(el) {
-		if (el.offsetWidth > docWidth) {
-			console.log(el);
-		}
-	}
-);
-
 $('#hamburger').click(
 	function() {
-		console.log('hamburger firing');
 		$('#menu').toggle(200);
 	}
 );
@@ -44,47 +30,30 @@ $('#kurikaeshi').hover(
 
 $('#placeholder-screen').hover(
 	function() {
-		console.log('should render');
 		$('#placeholder-click').toggle(200);
 	}
 );
 
 $('#placeholder-screen2').hover(
 	function() {
-		console.log('should render');
 		$('#placeholder-click2').toggle(200);
 	}
 );
 
 $('#github').hover(
 	function() {
-		console.log('should render');
 		$('#github-label').fadeToggle(200);
 	}
 );
 
 $('#email').hover(
 	function() {
-		console.log('should render');
 		$('#email-label').fadeToggle(200);
 	}
 );
 
 $('#linkedin').hover(
 	function() {
-		console.log('should render');
 		$('#linkedin-label').fadeToggle(200);
 	}
 );
-
-
-// $(window).scroll({previous: 0}, 
-// 	function () {
-// 		let current = $(window).scrollTop();
-// 		if (current < this.previous) {
-// 			$('.page-links-nav').css({opacity: 1, transition: '0.5s'}, 400);
-// 		} else {
-// 			$('.page-links-nav').css({opacity: 0, transition: '0.5s'}, 400);
-// 		}
-// 		this.previous = current;
-// 	});
