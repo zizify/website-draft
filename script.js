@@ -6,7 +6,9 @@ $('#hamburger').click(
 
 $('.link-item').click(
 	function() {
-		$('#menu').toggle(200);
+		if ($(window.width()) < 700) {
+			$('#menu').toggle(200);
+		}
 	}
 );
 
